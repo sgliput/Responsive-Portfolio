@@ -85,7 +85,7 @@ a.navlink:active { color: #4aaaa5; }
     clear:both;
     margin: 0 15%;
     padding: 10px 20px;
-    width: 70%;
+    width: 90%;
     background: #ffffff;
     border: 2px solid #dddddd;
     line-height: 1.5em;
@@ -201,8 +201,49 @@ footer{
 }
 
 
+@media(min-width: 980px){
+    .titleBox{
+        position: relative;
+        left: 13%;
+    }
+    .main, .main2, .main3{
+        margin: auto;
+         width: 70%;
+     }
+}
+
+@media(max-width: 980px){
+    .titleBox{
+        position: relative;
+        left: 3%;
+    }
+    .main, .main2, .main3{
+        margin: auto;
+         width: 90%;
+     }
+}
+
 @media(max-width: 768px){
+    .titleBox{
+        position: relative;
+        left: 3%;
+    }
     
+    .thumbnail{
+        width:100%;
+    }
+    .thumbnail-0, .thumbnail-1, .thumbnail-2{
+        width: 100%;
+        display: block;
+        
+    }
+    .caption, .caption2, .caption3{
+        margin: 0 auto;
+    }
+    .main, .main2, .main3{
+        margin: auto;
+         width: 90%;
+     }
 }
 
 @media(max-width: 640px){
@@ -213,20 +254,33 @@ footer{
         position: static;
         height: 150px;
         margin: 0px;
+        text-align: center;
     }
     header{
         margin: 0px;
     }
     nav{
-        clear:both;
         text-align: center;
+        margin: 0 auto;
+        float: none;
+        position: relative;
+        top: 35%;
+        left: 17%;
     }
     .titleBox{
         width:100%;
+        position: static;
     }
     .main, .main2, .main3{
        margin: auto;
         width: 90%;
+    }
+    .picture{
+        width: 100%;
+        height: 15%;;
+        display: block;
+        margin: 0 auto;
+        float: none;
     }
     .thumbnail{
         width:70%;
